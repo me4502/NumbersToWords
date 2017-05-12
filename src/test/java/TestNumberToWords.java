@@ -1,6 +1,6 @@
 import static org.junit.Assert.assertTrue;
 
-import com.me4502.techone.NumberToWords;
+import com.me4502.numberstowords.NumberToWords;
 import org.junit.Test;
 
 public class TestNumberToWords {

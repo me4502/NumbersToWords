@@ -1,4 +1,4 @@
-package com.me4502.techone;
+package com.me4502.numberstowords;
 
 import java.util.ArrayList;
 import java.util.List;

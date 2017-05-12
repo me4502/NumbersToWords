@@ -1,4 +1,4 @@
-package com.me4502.techone;
+package com.me4502.numberstowords;
 
 import static spark.Spark.get;
 import static spark.Spark.port;
@@ -9,7 +9,7 @@ import spark.template.jinjava.JinjavaEngine;
 import java.util.HashMap;
 import java.util.Map;
 
-public class TechnologyOneApp {
+public class Application {
 
     private static String numbersToWords(String number) {
         try {
