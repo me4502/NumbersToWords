@@ -63,7 +63,6 @@ public class NumberToWords {
     private static final Pattern DOT_PATTERN = Pattern.compile(".", Pattern.LITERAL);
 
     private boolean negative;
-    private String number;
     private String dollarNumber;
     private String centsNumber;
 
@@ -76,13 +75,12 @@ public class NumberToWords {
             number = number.substring(1);
         }
 
-        this.number = number;
-        if (this.number.contains(".")) {
-            String[] parts = DOT_PATTERN.split(this.number);
+        if (number.contains(".")) {
+            String[] parts = DOT_PATTERN.split(number);
             this.dollarNumber = parts[0];
             this.centsNumber = parts[1];
         } else {
-            this.dollarNumber = this.number;
+            this.dollarNumber = number;
             this.centsNumber = null;
         }
     }
